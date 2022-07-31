@@ -4,6 +4,7 @@ from .models import Post, Group
 
 num_posts = 10
 
+
 def index(request):
     posts = Post.objects.order_by('-pub_date')[:num_posts]
     context = {
