@@ -19,6 +19,5 @@ def group_posts(request, slug):
     context = {
         'group': group,
         'posts': posts,
-        'title': f'Записи сообщества {group}',
     }
     return render(request, 'posts/group_list.html', context)
